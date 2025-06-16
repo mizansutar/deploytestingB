@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="profile-container">
+      <div className="profile-card">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Profile"
+          className="profile-img"
+        />
+        <h1 className="profile-name">Nicky</h1>
+        <p className="profile-role">Engineering Student | CSE | Explorer</p>
+        <p className="profile-bio">
+          Passionate about building systems that touch lives. Working on ONAC—my
+          solo, futuristic tech venture.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="social-links">
+          <a href="https://github.com/mizan" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a href="mailto:youremail@example.com">Email</a>
+          <a href="https://linkedin.com/in/mizansutar" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
